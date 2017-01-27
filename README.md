@@ -1,6 +1,5 @@
-# UbiComp In Class Assignment One
-In this repository find code for reading from the serial port 
-and plotting to screen using python and arduino.
+# UbiComp In Class Assignment Two
+In this repository find code for manipulating signals in python. Specifically, there are scripts for sampling and displaying the FFT from the audio card, as well as using a microcontroller. 
 
 The python examples are shown using jupyter notebook, where possible. 
 Please note these are learning exercises and the code and methods used here are updated throughout the semester. Code here is chosen for simplicity, not efficiency. 
@@ -10,7 +9,11 @@ To run the examples you will need the following packages:
 - jupyter
 - numpy
 - pyserial
+- scipy
 
-All of which can be installed using anaconda (the method I selected).
+All of which can be installed using anaconda (the method I selected). 
 
-Additionally, I used the energia IDE (modeled after Arduino) with a RedBear WiFi mini. However, there is no need to use a special uController. The uController is simply used to write bytes to the serial port. Even so, I would recommend getting accustomed to using the WiFi enabled uController because we will use it more extensively as the class progresses. 
+You can alos optionally install
+- pyaudio (optional)
+
+However, you will need to run it on top of portaudio. There are various instructions online for getting this up and running, but it is not as simple as most other python packages. That is because the portaudio package must be built specifically for your version of python and your OS.
